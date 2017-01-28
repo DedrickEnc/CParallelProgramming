@@ -1,6 +1,6 @@
 /**
 * this program is for using the combined directive parallel
-* and for in for loup without the lastprivate clause.
+* and sections.
 **/
 
 #include<stdio.h>
@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
 {
 #pragma omp parallel sections //telling the compiler to split the following code block to different threads
 {
-/** I will put my sections here **/
+/** I will put my each section here **/
 
 #pragma omp section //section 1
 {
