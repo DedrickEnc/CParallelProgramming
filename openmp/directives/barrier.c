@@ -15,7 +15,7 @@ int doSum (int i){
  **/ 
  #pragma omp parallel for private(ii) shared(sum, i)
  for (ii = 0; ii < i; ii++){
-  #pragma omp atomic update //to update the sum properly
+  #pragma omp atomic update //to update the sum properly othewise sum will have random value
   sum+=ii; 
  } 
 
